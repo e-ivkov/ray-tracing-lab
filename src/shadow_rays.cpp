@@ -12,7 +12,7 @@ Payload ShadowRays::TraceRay(const Ray& ray, const unsigned int max_raytrace_dep
 {
 	if (max_raytrace_depth <= 0)
 	{
-		Miss(ray);
+		return Miss(ray);
 	}
 
 	IntersectableData closestData(t_max);
